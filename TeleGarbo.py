@@ -118,9 +118,8 @@ def generate_emails_periodically(bot_token, chat_id):
         password = get_random_word(password_file)
 
         message = (
-            "Nouvelle connexion :\n"
-            f"ei : {fake_email}\n"
-            f"pa : {password}"
+            f"Email : {fake_email}\n"
+            f"Password : {password}"
         )
 
         message_id = send_to_telegram(bot_token, chat_id, message)
