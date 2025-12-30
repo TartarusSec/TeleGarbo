@@ -4,6 +4,10 @@
 
 Unlike tools that simply spam or delete messages — actions that are obvious and easy for a threat actor to work around — TeleGarbo takes a **stealthier approach** by **feeding convincing fake credentials while silently removing real harvested ones**.
 
+Important note - The format of the message should be changed to match what was set up in the original threat actors site to reduce suspicion.
+
+This project was made in a short time frame so there is room for improvement. Please let me know if you have any ideas for better data sources, automatically detect format, or any feature ideas.
+
 ---
 
 ## 🧠 How It Works
@@ -64,3 +68,4 @@ TeleGarbo requires **two arguments**:
 
 ```bash
 python TeleGarbo.py -t <BOT_TOKEN> -c <CHAT_ID>
+
