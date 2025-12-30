@@ -151,7 +151,7 @@ def generate_emails_periodically(bot_token, chat_id):
             save_last_message_id(message_id)
             print("---------------------\n")
 
-        interval = random.randint(2 * 1, 2 * 3)
+        interval = random.randint(2 * 60, 20 * 60)
         print(f"Next run in {interval / 60:.2f} minutes...\n")
         time.sleep(interval)
 
